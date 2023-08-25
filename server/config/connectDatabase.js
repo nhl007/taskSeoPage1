@@ -10,8 +10,7 @@ const connectDatabase = () => {
   connect(db, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-
-    dbName: 'seoassignment',
+    dbName: 'seopage',
   })
     .then((con) => {
       if (env.match('development')) {
