@@ -1,0 +1,15 @@
+{
+  "name": "task_co_seo",
+  "version": "1.0.0",
+  "description": "Job Assignment for FrontEnd Developer Role at SEOPAGE1",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "clientI": "npm install --prefix client",
+    "server": "npm start --prefix server",
+    "serverI": "npm install --prefix server",
+    "install": "npm run clientI && npm run serverI",
+    "start": "npx concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
+  },
+  "author": "Asif Nihal",
+  "license": "ISC"
+}
